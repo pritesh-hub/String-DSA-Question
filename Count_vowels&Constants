@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+    int vowels = 0;
+    int constant = 0;
+    string str = "Hello World!";
+    for(char ch : str)
+    {
+        if(isalpha(ch))//cheak if character is alphabhate
+        {
+            ch = tolower(ch);//convert into lower case
+            
+            if(ch=='a'|| ch=='e'||ch=='i'||ch=='o'||ch=='u')
+            {
+                vowels++;
+            }
+            else
+            {
+                constant++;
+            }
+        }
+    }
+    cout<<"vowels:"<<vowels;
+    cout<<"Constants:"<<constant;
+return 0;    
+}
